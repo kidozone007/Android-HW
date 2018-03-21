@@ -3,4 +3,4 @@
 
 ## 分支
 - hw1: [婚姻建議](https://github.com/yaoandy107/Android-HW/tree/hw1)
-- hw2: 
+- hw2: [婚姻建議v2](https://github.com/yaoandy107/Android-HW/tree/hw2) 
