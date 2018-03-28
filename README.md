@@ -1,6 +1,5 @@
 # Android-HW
 北科Android應用程式開發 - 作業
 
-## 分支
-- hw1: [婚姻建議](https://github.com/yaoandy107/Android-HW/tree/hw1)
-- hw2: [婚姻建議v2](https://github.com/yaoandy107/Android-HW/tree/hw2) 
+## 作業3
+單元測試練習
