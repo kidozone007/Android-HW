@@ -2,104 +2,94 @@ package edu.ntut.user.myhw3;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.AppCompatCheckBox;
 import android.view.View;
-import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.NumberPicker;
+import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+import java.util.ArrayList;
+import java.util.List;
 
-    private Spinner mSpnSex;
-    private RadioGroup mRadGrp;
-    private RadioButton mRadBtnAgeRange1;
-    private RadioButton mRadBtnAgeRange2;
-    private RadioButton mRadBtnAgeRange3;
-    private TextView mTxtNumFamily;
-    private NumberPicker mNumPkrFamily;
-    private Button mBtnOK;
-    private TextView mTxtSug;
+public class MainActivity extends AppCompatActivity implements View.OnClickListener, RadioGroup.OnCheckedChangeListener {
 
-    private String selectedSex;
+
+    private TextView txtSex;
+    private RadioGroup rgSex;
+    private RadioButton rbMale;
+    private RadioButton rbFemale;
+    private Spinner spAge;
+    private List<CheckBox> checkBoxList = new ArrayList<>();
+    private Button btnOK;
+    private TextView tvResult;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        initView();
 
-        mSpnSex = (Spinner) findViewById(R.id.spnSex);
-        mRadGrp = (RadioGroup) findViewById(R.id.radGrpAge);
-        mRadBtnAgeRange1 = (RadioButton) findViewById(R.id.radBtnAgeRange1);
-        mRadBtnAgeRange2 = (RadioButton) findViewById(R.id.radBtnAgeRange2);
-        mRadBtnAgeRange3 = (RadioButton) findViewById(R.id.radBtnAgeRange3);
-        mTxtNumFamily = (TextView) findViewById(R.id.txtNumFamily);
-        mNumPkrFamily = (NumberPicker) findViewById(R.id.numPkrFamply);
-        mNumPkrFamily.setMinValue(0);
-        mNumPkrFamily.setMaxValue(20);
-        mNumPkrFamily.setValue(3);
-        mBtnOK = (Button) findViewById(R.id.btnOK);
-        mTxtSug = (TextView) findViewById(R.id.txtSug);
-
-        mSpnSex.setOnItemSelectedListener(spnOnItemSelect);
-        mNumPkrFamily.setOnValueChangedListener(numPkrFamilyOnValueChange);
-        mBtnOK.setOnClickListener(btnOKOnClick);
     }
 
-    private AdapterView.OnItemSelectedListener spnOnItemSelect = new AdapterView.OnItemSelectedListener() {
-        @Override
-        public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-            selectedSex = parent.getSelectedItem().toString();
+    private void initView() {
+        txtSex = (TextView) findViewById(R.id.txtSex);
+        rgSex = findViewById(R.id.rg_sex);
+        rgSex.setOnCheckedChangeListener(this);
+        rbMale = (RadioButton) findViewById(R.id.rb_male);
+        rbFemale = (RadioButton) findViewById(R.id.rb_female);
+        spAge = (Spinner) findViewById(R.id.sp_age);
 
-            switch (selectedSex) {
-                case "male": mRadBtnAgeRange1.setText(getString(R.string.maleAgeRange1));
-                    mRadBtnAgeRange2.setText(getString(R.string.maleAgeRange2));
-                    mRadBtnAgeRange3.setText(getString(R.string.maleAgeRange3));
-                    break;
-                case "female":
-                    mRadBtnAgeRange1.setText(getString(R.string.femaleAgeRange1));
-                    mRadBtnAgeRange2.setText(getString(R.string.femaleAgeRange2));
-                    mRadBtnAgeRange3.setText(getString(R.string.femaleAgeRange3));
-            }
-        }
+        checkBoxList.add((AppCompatCheckBox) findViewById(R.id.cb_music));
+        checkBoxList.add((AppCompatCheckBox) findViewById(R.id.cb_sing));
+        checkBoxList.add((AppCompatCheckBox) findViewById(R.id.cb_dance));
+        checkBoxList.add((AppCompatCheckBox) findViewById(R.id.cb_travel));
+        checkBoxList.add((AppCompatCheckBox) findViewById(R.id.cb_read));
+        checkBoxList.add((AppCompatCheckBox) findViewById(R.id.cb_write));
+        checkBoxList.add((AppCompatCheckBox) findViewById(R.id.cb_climb));
+        checkBoxList.add((AppCompatCheckBox) findViewById(R.id.cb_swim));
+        checkBoxList.add((AppCompatCheckBox) findViewById(R.id.cb_eat));
+        checkBoxList.add((AppCompatCheckBox) findViewById(R.id.cb_draw));
 
-        @Override
-        public void onNothingSelected(AdapterView<?> parent) {
+        btnOK = (Button) findViewById(R.id.btnOK);
+        tvResult = (TextView) findViewById(R.id.tv_result);
+        btnOK.setOnClickListener(this);
 
-        }
-    };
+    }
 
-    private NumberPicker.OnValueChangeListener numPkrFamilyOnValueChange = new NumberPicker.OnValueChangeListener() {
-        @Override
-        public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
-            mTxtNumFamily.setText(String.valueOf(newVal));
-        }
-    };
-
-    private View.OnClickListener btnOKOnClick = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-
-            MarriageSuggestion ms = new MarriageSuggestion();
-
-            String strSex = mSpnSex.getSelectedItem().toString();
-            int iAgeRange = 0;
-
-                switch (mRadGrp.getCheckedRadioButtonId()) {
-                    case R.id.radBtnAgeRange1:
-                        iAgeRange = 1;
-                        break;
-                    case R.id.radBtnAgeRange2:
-                        iAgeRange = 2;
-                        break;
-                    case R.id.radBtnAgeRange3:
-                        iAgeRange = 3;
-                        break;
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.btnOK:
+                StringBuilder hobbies = new StringBuilder();
+                for (CheckBox checkBoxHobby : checkBoxList) {
+                    if (checkBoxHobby.isChecked()) {
+                        hobbies.append(checkBoxHobby.getText().toString()).append(" ");
+                    }
                 }
-
-            mTxtSug.setText(ms.getSuggestion(strSex, iAgeRange, mNumPkrFamily.getValue()));
+                tvResult.setText(hobbies);
+                break;
         }
-    };
+    }
+
+    @Override
+    public void onCheckedChanged(RadioGroup radioGroup, int i) {
+        ArrayAdapter<String> adapter;
+        String[] entries;
+        switch (i) {
+            case R.id.rb_male:
+                entries = getResources().getStringArray(R.array.male_age_list);
+                adapter = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_list_item_1, entries);
+                spAge.setAdapter(adapter);
+                break;
+            case R.id.rb_female:
+                entries = getResources().getStringArray(R.array.female_age_list);
+                adapter = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_list_item_1, entries);
+                spAge.setAdapter(adapter);
+                break;
+        }
+    }
 }

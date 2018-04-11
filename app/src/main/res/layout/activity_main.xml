@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,87 +8,117 @@
     android:orientation="vertical"
     tools:context="edu.ntut.user.myhw3.MainActivity">
 
-    <TextView
-        android:id="@+id/txtSex"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/sex"
-        android:textSize="18sp" />
+        android:orientation="vertical">
 
-    <Spinner
-        android:id="@+id/spnSex"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:entries="@array/sex_list"
-        android:prompt="@string/spn_sex_list_promt"
-        android:spinnerMode="dialog" />
-
-    <TextView
-        android:id="@+id/txtAge"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/age"
-        android:textSize="18sp" />
-
-    <RadioGroup
-        android:id="@+id/radGrpAge"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <RadioButton
-            android:id="@+id/radBtnAgeRange1"
+        <TextView
+            android:id="@+id/txtSex"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/maleAgeRange1" />
+            android:text="@string/sex"
+            android:textSize="18sp" />
 
-        <RadioButton
-            android:id="@+id/radBtnAgeRange2"
+        <RadioGroup
+            android:id="@+id/rg_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rb_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/male" />
+            <RadioButton
+                android:id="@+id/rb_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/female" />
+        </RadioGroup>
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/maleAgeRange2" />
+            android:text="@string/age"
+            android:textSize="18sp" />
 
-        <RadioButton
-            android:id="@+id/radBtnAgeRange3"
+        <Spinner
+            android:id="@+id/sp_age"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/maleAgeRange3" />
+            android:entries="@array/male_age_list" />
 
-    </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="興趣"
+            android:textSize="18sp" />
 
-    <TextView
-        android:id="@+id/txtNumber"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/family"
-        tools:textSize="18sp" />
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cb_music"
+            android:text="@string/music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cb_sing"
+            android:text="@string/sing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cb_dance"
+            android:text="@string/dance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cb_travel"
+            android:text="@string/travel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cb_read"
+            android:text="@string/reading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cb_write"
+            android:text="@string/writing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cb_climb"
+            android:text="@string/climbing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cb_swim"
+            android:text="@string/swim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cb_eat"
+            android:text="@string/eating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cb_draw"
+            android:text="@string/drawing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
-    <TextView
-        android:id="@+id/txtNumFamily"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/number" />
 
-    <NumberPicker
-        android:id="@+id/numPkrFamply"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_gravity="center_horizontal" />
+        <Button
+            android:id="@+id/btnOK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnOK"
+            android:textSize="18sp" />
 
-    <Button
-        android:id="@+id/btnOK"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/btnOK"
-        android:textSize="18sp" />
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp" />
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/txtSug"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/suggestion"
-        android:textSize="18sp" />
-
-</LinearLayout>
+</ScrollView>
