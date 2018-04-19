@@ -1,0 +1,96 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml:2:1-20:12
+INJECTED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml:2:1-20:12
+INJECTED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml:2:1-20:12
+INJECTED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml:2:1-20:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/yaoweichen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/562762bf997917299a78068e39f1e710/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/yaoweichen/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/cf86882fe4bd85c2c4ee517719716dea/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/yaoweichen/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/b7e515fb00239516b891ab69c8d00d7c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/yaoweichen/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/f172f5874dae18b19f4ba80fc338c86b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/yaoweichen/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/cbd0cdbddf58f743187f97fe8fd62cd6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/yaoweichen/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/ef8b7a7978b5806d390aad4f988a8424/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /Users/yaoweichen/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/9d33cc0055f2be2beef522acff1bb1cc/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/yaoweichen/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/d3361d3f34a58700b764acdd01cc3c66/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/yaoweichen/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/f021aea0adb8d80306a2d322c636d3f5/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/yaoweichen/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/bac83aca99f4758b2a6d8fc2a770a5d3/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /Users/yaoweichen/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/04fae2b57fa004fea9b535e4f98c94d7/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml:2:1-20:12
+INJECTED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml:2:1-20:12
+INJECTED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml:2:1-20:12
+	package
+		ADDED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml:3:5-44
+		INJECTED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml
+		ADDED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml:2:1-20:12
+		INJECTED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml
+		ADDED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml:2:1-20:12
+		INJECTED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml:5:5-18:19
+	android:supportsRtl
+		ADDED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml:9:9-35
+	android:label
+		ADDED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml:8:9-41
+	android:icon
+		ADDED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml:10:9-40
+activity#com.galleryusingviewanimation.MainActivity
+ADDED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml:11:9-17:20
+	android:name
+		ADDED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml:11:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml:12:13-16:29
+action#android.intent.action.MAIN
+ADDED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml:13:17-69
+	android:name
+		ADDED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml:13:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml:15:17-77
+	android:name
+		ADDED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml:15:27-74
+uses-sdk
+INJECTED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml
+INJECTED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/yaoweichen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/562762bf997917299a78068e39f1e710/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/yaoweichen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/562762bf997917299a78068e39f1e710/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/yaoweichen/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/cf86882fe4bd85c2c4ee517719716dea/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/yaoweichen/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/cf86882fe4bd85c2c4ee517719716dea/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/yaoweichen/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/b7e515fb00239516b891ab69c8d00d7c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/yaoweichen/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/b7e515fb00239516b891ab69c8d00d7c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/yaoweichen/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/f172f5874dae18b19f4ba80fc338c86b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/yaoweichen/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/f172f5874dae18b19f4ba80fc338c86b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/yaoweichen/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/cbd0cdbddf58f743187f97fe8fd62cd6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/yaoweichen/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/cbd0cdbddf58f743187f97fe8fd62cd6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/yaoweichen/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/ef8b7a7978b5806d390aad4f988a8424/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/yaoweichen/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/ef8b7a7978b5806d390aad4f988a8424/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/yaoweichen/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/9d33cc0055f2be2beef522acff1bb1cc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/yaoweichen/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/9d33cc0055f2be2beef522acff1bb1cc/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/yaoweichen/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/d3361d3f34a58700b764acdd01cc3c66/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/yaoweichen/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/d3361d3f34a58700b764acdd01cc3c66/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/yaoweichen/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/f021aea0adb8d80306a2d322c636d3f5/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/yaoweichen/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/f021aea0adb8d80306a2d322c636d3f5/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/yaoweichen/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/bac83aca99f4758b2a6d8fc2a770a5d3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/yaoweichen/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/bac83aca99f4758b2a6d8fc2a770a5d3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/yaoweichen/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/04fae2b57fa004fea9b535e4f98c94d7/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/yaoweichen/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/04fae2b57fa004fea9b535e4f98c94d7/AndroidManifest.xml:20:5-44
+INJECTED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml
+INJECTED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml
+		ADDED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml
+		ADDED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/yaoweichen/AndroidStudioProjects/Unit023-GalleryUsingViewAnimation/app/src/main/AndroidManifest.xml
